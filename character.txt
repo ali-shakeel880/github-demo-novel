@@ -6,7 +6,7 @@ and if I head back over to my terminal
 
 and I type git status again,
 
-now Git tells me there's two files
+now Git tells me there's two filesasdad
 
 that it's aware of,
 
