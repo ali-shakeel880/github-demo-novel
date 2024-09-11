@@ -1,0 +1,238 @@
+before I actually begin writing chapter one.
+
+So I've saved those files
+
+and if I head back over to my terminal
+
+and I type git status again,
+
+now Git tells me there's two files
+
+that it's aware of,
+
+but it's not tracking, okay?
+
+So we've done step one, I've worked on stuff.
+
+Now I wanna make a commit with what I've done.
+
+Well, now we need to talk about a tiny bit of terminology.
+
+Three different locations,
+
+they're not actual physical locations,
+
+working directory, staging area,
+
+and the repository.
+
+Let's start with this first one,
+
+working directory.
+
+That's just a fancy way of referring to the directory,
+
+the place we're actually working on our project.
+
+So for me, my working directory is this MyFirstNovel folder
+
+and in our working directory,
+
+I have two files at the moment.
+
+I might have more,
+
+I could have 100 files in here.
+
+The working directory just refers
+
+to this directory where I'm working.
+
+Then we have the repository itself.
+
+This is the .git folder.
+
+Remember there is a .git folder here, ls -a.
+
+There it is.
+
+Inside of that folder at the moment,
+
+there's some stuff that's just there,
+
+some default contents,
+
+but once they actually make a commit,
+
+git commit changes what is in .git.
+
+It actually adds new commits to that folder.
+
+So when we actually make a commit,
+
+we are updating that folder,
+
+the actual Git repository.
+
+Otherwise everything I've done so far
+
+is just in the working directory.
+
+And then there's this intermediate thing, this zone,
+
+again, not a physical location, the staging area.
+
+And this is where we add our changes to
+
+before we make a commit.
+
+So here's another flavor of diagram.
+
+We have those three terms,
+
+working directory, staging area, and repository.
+
+On the left side in the working directory,
+
+you can see a bunch of changes that I've made.
+
+So hypothetically, I've been working for a while.
+
+I've done some, you know, I'm working on a project,
+
+some web development project
+
+and I've changed seven files
+
+and Git has noticed that.
+
+So I've decided, okay,
+
+there's actually two discreet things I was working on
+
+and I'm going to make my first commit
+
+with those bottom four files that I changed.
+
+They have to do with the nav bar.
+
+I updated the nav bar
+
+or I created a new nav bar on our webpage.
+
+So I stage those changes first
+
+and I do that using the git add command.
+
+Then I can make a commit.
+
+And then same thing for these other changes.
+
+I can stage them.
+
+Then I make a commit
+
+at which point I'm actually updating the .git folder.
+
+So I know I'm kind of beating a dead horse,
+
+but this is really important.
+
+Two commands, git add is just going to stage changes
+
+so that I then commit them.
+
+And this git add command is pretty simple.
+
+It's git, space, add
+
+and then one or more files,
+
+the name of a file that we've changed.
+
+And we can do more, we can do multiple
+
+if we separate them by spaces.
+
+Otherwise we can just do git add file name.
+
+So over here in my working directory,
+
+I have these two files, right?
+
+I've changed them, they exist.
+
+They didn't exist earlier and Git noticed
+
+and it tells me this.
+
+Let me make this full screen here.
+
+It says untracked files,
+
+characters and outline.txt,
+
+use git add file
+
+to include in what will be committed.
+
+Okay, so why don't we do that?
+
+I'll add the first one.
+
+So git add, and I can do auto complete
+
+if I type something and then hit Tab.
+
+So git add characters.txt.
+
+Now let's type git status again.
+
+I haven't made a commit.
+
+All that I've done is stage the one file,
+
+characters.txt to be committed,
+
+but it's not yet committed.
+
+So if I wanted to,
+
+I could make a commit now
+
+with just that one file that I changed,
+
+but I'm gonna group them together
+
+because you know, I've worked on them together,
+
+they have to do with one another.
+
+Unlike this example here
+
+where I wanted to group things
+
+into two individual commits,
+
+I instead want to group everything on this project so far,
+
+just two files into one commit.
+
+So I'm gonna also add outline.txt
+
+and then I'm gonna look at git status.
+
+We always use git status.
+
+It can never hurt anything.
+
+It just reports back.
+
+And you'll see whenever we make a commit,
+
+those two files will be included.
+
+So what we need to do next is cover git commit.
+
+We need to learn how to make those commits.
+
