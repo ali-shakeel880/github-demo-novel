@@ -9,7 +9,7 @@ and I type git status again,
 
 now Git tells me there's two filesasdad
 
-that it's aware ofcatsy,
+that it's aware ofcatsy,asd
 
 but it's not tracking, okay?
 
